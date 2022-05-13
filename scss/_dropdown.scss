@@ -1,0 +1,87 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+
+    i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn-formal {
+    color: #000;
+    background-color: transparent;
+    border: 0;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.dropbtn {
+    height: auto;
+    color: white;
+    padding: 5px 10px;
+    margin: 6px;
+    border-radius: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    &.drop-open {
+        background-color: #95a5a6;
+    }
+
+    &.drop-normal {
+        background-color: #ff9333;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    li {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+.name-assign-logo {
+    background-color: #dfdfdf;
+    color: #747474;
+    font-weight: bold;
+    padding: 7px 2px;
+}
+
+.dropdown-control-left {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: 5px center !important;
+    padding-left: 10px;
+    appearance: none !important;
+    background-color: #e1e7e9;
+    min-width: 120px;
+    width: 120px;
+
+    .dropbtn-formal {
+        text-align: center
+    }
+}

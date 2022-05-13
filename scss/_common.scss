@@ -1,0 +1,204 @@
+select {
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+    cursor: pointer;
+}
+
+$sides: (
+    "a": "",
+    "t": "top",
+    "b": "bottom",
+    "l": "left",
+    "r": "right",
+);
+
+$spaceamounts: (
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    75,
+    100
+); // Adjust this to include the pixel amounts you need.
+$sides: (
+    top,
+    bottom,
+    left,
+    right
+); // Leave this variable alone
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+
+        .p-#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #2989ff;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-none {
+    display: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px 20px;
+}
+
+.grid-3 {
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-gap: 20px 10px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 40% 20% 30% 5%;
+    margin: 10px 0;
+    grid-gap: 20px 10px;
+}
+
+@media only screen and (min-width: 769px) {
+    .overflow-md-hidden {
+        overflow: hidden;
+        height: calc(100vh - 50px);
+    }
+
+    .d-md-flex {
+        display: flex;
+    }
+
+    .d-md-block {
+        display: block;
+    }
+
+
+    .w-md-70 {
+        width: 70%
+    }
+
+    .justify-content-md-end {
+        justify-content: end;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+
+    .d-lg-flex {
+        display: flex;
+    }
+
+    .w-lg-70 {
+        width: 70%
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .fillter-section {
+        grid-template-columns: 100%;
+    }
+
+    .grid-3 {
+        grid-template-columns: 100%;
+    }
+
+    .content-box-file {
+        .grid-4 {
+            grid-template-columns: 80% 20%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .content-header {
+        text-align: center;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .content-fillter {
+        width: 100%;
+    }
+
+    .content-table {
+        width: 100%;
+    }
+}

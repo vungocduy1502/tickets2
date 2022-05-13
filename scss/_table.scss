@@ -1,0 +1,39 @@
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    white-space: nowrap;
+    overflow: auto;
+
+    .fa-thumbs-up {
+        color: #328634;
+    }
+}
+
+
+
+th {
+    border: 1px solid #fff;
+    text-align: left;
+    padding: 10px;
+    background-color: #ececec;
+    height: 23px;
+    position: sticky;
+    top: 0;
+
+}
+
+td {
+    text-align: left;
+    padding: 10px;
+
+    border-bottom: 1px solid #d6d6d6;
+}
+
+tr {
+    &:last-child {
+        td {
+            border: 0;
+        }
+    }
+}

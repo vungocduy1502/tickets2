@@ -1,0 +1,82 @@
+button {
+    @extend input;
+
+    &.btn-a300 {
+        background-color: #a3b1b2;
+        color: #fff;
+    }
+
+    &.btn-b300 {
+        background-color: #3b464a;
+        color: #fff;
+    }
+
+    &.btn-f000 {
+        background-color: #f000;
+        color: #3b464a;
+    }
+}
+
+.btn-plus {
+    width: 40px;
+    height: 40px;
+    background-color: #e1e7e9;
+    border: 0;
+
+    i {
+        color: #fff;
+    }
+}
+
+.btn-reload {
+    width: 40px;
+    height: 40px;
+    background-color: #e1e7e9;
+    border: 0;
+}
+
+.btn-up-size-font {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    color: #858585;
+    font-size: 15px;
+}
+
+.btn-down-size-font {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    color: #141414;
+    font-size: 17px;
+}
+
+.color-open {
+    color: #98a7a8;
+}
+
+.color-progress {
+    color: #2ab7eb;
+}
+
+.color-temporary {
+    color: #dec64e;
+}
+
+.color-misassigned {
+    color: #7a6dc0;
+}
+
+.color-dept {
+    color: #ff7800;
+}
+
+.color-link {
+    color: #ff7800;
+}
+
+.color-done {
+    color: #78d3d2;
+}
