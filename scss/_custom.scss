@@ -1,106 +1,105 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    // overflow-x: hidden;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  // overflow-x: hidden;
 }
-
 
 input {
-    box-sizing: border-box;
-    padding: 0 10px;
-    height: 40px;
-    border: 1px solid #e4e4e4;
-    cursor: pointer;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
 }
 
-
 .content-fillter {
-    border-right: 1px solid #e4e4e4;
-    width: 400px;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  width: 400px;
 }
 
 .content-table {
-    border-right: 1px solid #e4e4e4;
-    width: calc(100% - 400px);
-    overflow: auto;
+  border-right: 1px solid #e4e4e4;
+  width: calc(100% - 400px);
+  overflow: auto;
 }
 
 .content-box {
-    border-bottom: 1px solid #e4e4e4;
-    padding: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px;
 }
 
 .fillter-section {
-    align-items: center;
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 40% 60%;
-    grid-gap: 20px 0;
+  align-items: center;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 40% 60%;
+  grid-gap: 20px 0;
 }
 
 .input-date-birth {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    div {
-        width: 49%;
-    }
+  div {
+    width: 49%;
+  }
 
-    p {
-        font-size: 15px;
-        color: #bbb6b9;
-    }
+  p {
+    font-size: 15px;
+    color: #bbb6b9;
+  }
 }
 
 .fillter-btn {
-    position: sticky;
-    bottom: 0;
-    background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
 }
 
 .content-table-detail {
-    .grid-3 {
-        &:nth-child(even) {
-            background-color: #dddddd;
-        }
+  .grid-3 {
+    &:nth-child(even) {
+      background-color: #dddddd;
     }
+  }
 
-    p {
-        margin-top: 11px;
-    }
+  p {
+    margin-top: 11px;
+  }
 }
 
 .flex-column-60 {
-    min-height: 60px;
+  min-height: 60px;
 
-    .fillter-name {
-        margin-top: 11px;
-    }
+  .fillter-name {
+    margin-top: 11px;
+  }
 }
 
 .fillter-name {
-    background-color: #edf5ff;
-    color: #2989ff;
-    padding: 5px 8px;
-    display: inline-block;
-    text-align: center;
-    max-width: calc(100% - 40px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  background-color: #edf5ff;
+  color: #2989ff;
+  padding: 5px 8px;
+  display: inline-block;
+  text-align: center;
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .file-name {
-    color: rgba(45, 160, 198, 1);
+  color: rgba(45, 160, 198, 1);
 
-    i {
-        color: #888888;
-    }
+  i {
+    color: #888888;
+  }
 }
 
 // .content-box-file {

@@ -15,6 +15,17 @@ header {
   background-color: darkgray;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+footer .footer-about {
+  margin-right: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +47,7 @@ input, button {
 
 .content-fillter {
   border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   width: 400px;
 }
 
@@ -609,10 +621,6 @@ a {
 }
 
 @media only screen and (min-width: 769px) {
-  .overflow-md-hidden {
-    overflow: hidden;
-    height: calc(100vh - 50px);
-  }
   .d-md-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,6 +644,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .overflow-lg-hidden {
+    overflow: hidden;
+    height: calc(100vh - 50px);
   }
   .w-lg-70 {
     width: 70%;
@@ -670,6 +682,16 @@ a {
   .content-header h4 {
     margin-bottom: 10px;
   }
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-about {
+    margin: 20px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -678,6 +700,7 @@ a {
   }
   .content-table {
     width: 100%;
+    height: 100vh;
   }
 }
 
@@ -951,7 +974,7 @@ table .fa-thumbs-up {
 th {
   border: 1px solid #fff;
   text-align: left;
-  padding: 10px;
+  padding: 0 10px;
   background-color: #ececec;
   height: 23px;
   position: -webkit-sticky;
@@ -961,11 +984,61 @@ th {
 
 td {
   text-align: left;
-  padding: 10px;
+  padding: 0 10px;
   border-bottom: 1px solid #d6d6d6;
 }
 
 tr:last-child td {
   border: 0;
+}
+
+.sticky-first {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.stick-second {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 34px;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.sticky-firs-th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.stick-second-th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 34px;
+  z-index: 5;
+}
+
+.w-50px {
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+}
+
+.w-100px {
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.w-300px {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
