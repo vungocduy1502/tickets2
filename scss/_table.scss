@@ -23,51 +23,51 @@ th {
 td {
   text-align: left;
   padding: 0 10px;
-
-  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
 }
 
-tr {
-  &:last-child {
-    td {
-      border: 0;
-    }
-  }
-}
+
+
 .sticky-first {
   position: sticky;
   left: 0;
   z-index: 4;
   background-color: #fff;
 }
+
 .stick-second {
   position: sticky;
   left: 34px;
   z-index: 4;
   background-color: #fff;
 }
+
 .sticky-firs-th {
   position: sticky;
   top: 0;
   left: 0;
   z-index: 5;
 }
+
 .stick-second-th {
   position: sticky;
   top: 0;
   left: 34px;
   z-index: 5;
 }
+
 .w-50px {
   width: 50px;
   max-width: 50px;
   min-width: 50px;
 }
+
 .w-100px {
   width: 100px;
   max-width: 100px;
   min-width: 100px;
 }
+
 .w-300px {
   width: 300px;
   max-width: 300px;
