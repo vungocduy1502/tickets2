@@ -20,6 +20,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
+  height: 20px;
 }
 
 footer .footer-about {
@@ -34,6 +35,7 @@ footer .footer-about {
 body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 input, button {
@@ -49,6 +51,17 @@ input, button {
   border-right: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
   width: 400px;
+  overflow: auto;
+  scrollbar-color: #a3b1b2;
+  scrollbar-width: thin;
+}
+
+.content-fillter::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content-fillter::-webkit-scrollbar-thumb {
+  background-color: #a3b1b2;
 }
 
 .content-table {
@@ -647,7 +660,7 @@ a {
   }
   .overflow-lg-hidden {
     overflow: hidden;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 110px);
   }
   .w-lg-70 {
     width: 70%;

@@ -14,9 +14,12 @@ header {
   height: 30px;
   background-color: darkgray;
 }
+
 footer {
   display: flex;
   padding: 20px;
+  height: 20px;
+
   .footer-about {
     margin-right: 100px;
   }

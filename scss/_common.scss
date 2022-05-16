@@ -28,7 +28,12 @@ $spaceamounts: (
   75,
   100
 ); // Adjust this to include the pixel amounts you need.
-$sides: (top, bottom, left, right); // Leave this variable alone
+$sides: (
+  top,
+  bottom,
+  left,
+  right
+); // Leave this variable alone
 
 @each $space in $spaceamounts {
   @each $side in $sides {
@@ -141,10 +146,12 @@ a {
   .d-lg-flex {
     display: flex;
   }
+
   .overflow-lg-hidden {
     overflow: hidden;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 110px);
   }
+
   .w-lg-70 {
     width: 70%;
   }
@@ -179,9 +186,11 @@ a {
       margin-bottom: 10px;
     }
   }
+
   footer {
     display: block;
     text-align: center;
+
     .footer-about {
       margin: 20px 0;
       justify-content: center;
